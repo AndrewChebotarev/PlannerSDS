@@ -1,0 +1,17 @@
+D:\SDS\PlannerSDS\PlannerSDS\bin\Debug\net8.0-windows\PlannerSDS.exe
+D:\SDS\PlannerSDS\PlannerSDS\bin\Debug\net8.0-windows\PlannerSDS.deps.json
+D:\SDS\PlannerSDS\PlannerSDS\bin\Debug\net8.0-windows\PlannerSDS.runtimeconfig.json
+D:\SDS\PlannerSDS\PlannerSDS\bin\Debug\net8.0-windows\PlannerSDS.dll
+D:\SDS\PlannerSDS\PlannerSDS\bin\Debug\net8.0-windows\PlannerSDS.pdb
+D:\SDS\PlannerSDS\PlannerSDS\obj\Debug\net8.0-windows\PlannerSDS.csproj.GenerateResource.cache
+D:\SDS\PlannerSDS\PlannerSDS\obj\Debug\net8.0-windows\PlannerSDS.GeneratedMSBuildEditorConfig.editorconfig
+D:\SDS\PlannerSDS\PlannerSDS\obj\Debug\net8.0-windows\PlannerSDS.AssemblyInfoInputs.cache
+D:\SDS\PlannerSDS\PlannerSDS\obj\Debug\net8.0-windows\PlannerSDS.AssemblyInfo.cs
+D:\SDS\PlannerSDS\PlannerSDS\obj\Debug\net8.0-windows\PlannerSDS.csproj.CoreCompileInputs.cache
+D:\SDS\PlannerSDS\PlannerSDS\obj\Debug\net8.0-windows\PlannerSDS.dll
+D:\SDS\PlannerSDS\PlannerSDS\obj\Debug\net8.0-windows\refint\PlannerSDS.dll
+D:\SDS\PlannerSDS\PlannerSDS\obj\Debug\net8.0-windows\PlannerSDS.pdb
+D:\SDS\PlannerSDS\PlannerSDS\obj\Debug\net8.0-windows\PlannerSDS.genruntimeconfig.cache
+D:\SDS\PlannerSDS\PlannerSDS\obj\Debug\net8.0-windows\ref\PlannerSDS.dll
+D:\SDS\PlannerSDS\PlannerSDS\obj\Debug\net8.0-windows\PlannerSDS.Properties.Resources.resources
+D:\SDS\PlannerSDS\PlannerSDS\obj\Debug\net8.0-windows\PlannerSDS.MainForm.resources
