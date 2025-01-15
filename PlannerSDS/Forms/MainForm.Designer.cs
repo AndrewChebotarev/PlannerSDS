@@ -30,21 +30,21 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             tabControl1 = new TabControl();
-            tabPage1 = new TabPage();
+            dashBoardTabPage = new TabPage();
             button1 = new Button();
-            panel1 = new Panel();
+            initPanel = new Panel();
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
             tabPage2 = new TabPage();
             tabControl1.SuspendLayout();
-            tabPage1.SuspendLayout();
-            panel1.SuspendLayout();
+            dashBoardTabPage.SuspendLayout();
+            initPanel.SuspendLayout();
             SuspendLayout();
             // 
             // tabControl1
             // 
-            tabControl1.Controls.Add(tabPage1);
+            tabControl1.Controls.Add(dashBoardTabPage);
             tabControl1.Controls.Add(tabPage2);
             tabControl1.Dock = DockStyle.Fill;
             tabControl1.HotTrack = true;
@@ -54,21 +54,21 @@
             tabControl1.Size = new Size(1057, 533);
             tabControl1.TabIndex = 0;
             // 
-            // tabPage1
+            // dashBoardTabPage
             // 
-            tabPage1.AutoScroll = true;
-            tabPage1.BackColor = Color.Transparent;
-            tabPage1.Controls.Add(button1);
-            tabPage1.Controls.Add(panel1);
-            tabPage1.ForeColor = SystemColors.ActiveCaptionText;
-            tabPage1.ImeMode = ImeMode.NoControl;
-            tabPage1.Location = new Point(4, 29);
-            tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(1049, 500);
-            tabPage1.TabIndex = 0;
-            tabPage1.Text = "DashBoard";
-            tabPage1.UseVisualStyleBackColor = true;
+            dashBoardTabPage.AutoScroll = true;
+            dashBoardTabPage.BackColor = Color.Transparent;
+            dashBoardTabPage.Controls.Add(button1);
+            dashBoardTabPage.Controls.Add(initPanel);
+            dashBoardTabPage.ForeColor = SystemColors.ActiveCaptionText;
+            dashBoardTabPage.ImeMode = ImeMode.NoControl;
+            dashBoardTabPage.Location = new Point(4, 29);
+            dashBoardTabPage.Name = "dashBoardTabPage";
+            dashBoardTabPage.Padding = new Padding(3);
+            dashBoardTabPage.Size = new Size(1049, 500);
+            dashBoardTabPage.TabIndex = 0;
+            dashBoardTabPage.Text = "DashBoard";
+            dashBoardTabPage.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -80,22 +80,22 @@
             button1.TabIndex = 0;
             button1.Text = "Добавить раздел";
             button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            button1.Click += NewDashBoard_Click;
             // 
-            // panel1
+            // initPanel
             // 
-            panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
-            panel1.AutoSize = true;
-            panel1.BackColor = Color.SkyBlue;
-            panel1.Controls.Add(label3);
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(label1);
-            panel1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            panel1.Location = new Point(8, 6);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(285, 486);
-            panel1.TabIndex = 1;
-            panel1.Visible = false;
+            initPanel.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            initPanel.AutoSize = true;
+            initPanel.BackColor = Color.SkyBlue;
+            initPanel.Controls.Add(label3);
+            initPanel.Controls.Add(label2);
+            initPanel.Controls.Add(label1);
+            initPanel.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            initPanel.Location = new Point(8, 6);
+            initPanel.Name = "initPanel";
+            initPanel.Size = new Size(285, 486);
+            initPanel.TabIndex = 1;
+            initPanel.Visible = false;
             // 
             // label3
             // 
@@ -105,7 +105,7 @@
             label3.Size = new Size(148, 20);
             label3.TabIndex = 4;
             label3.Text = "+ Добавить задачу";
-            label3.Click += label3_Click;
+            label3.Click += NewTask_Click;
             // 
             // label2
             // 
@@ -150,21 +150,22 @@
             RightToLeft = RightToLeft.No;
             Text = "PlannerSDS";
             WindowState = FormWindowState.Maximized;
+            Resize += FormResize;
             tabControl1.ResumeLayout(false);
-            tabPage1.ResumeLayout(false);
-            tabPage1.PerformLayout();
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
+            dashBoardTabPage.ResumeLayout(false);
+            dashBoardTabPage.PerformLayout();
+            initPanel.ResumeLayout(false);
+            initPanel.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
 
         private TabControl tabControl1;
-        private TabPage tabPage1;
+        public TabPage dashBoardTabPage;
         private TabPage tabPage2;
         private Button button1;
-        private Panel panel1;
+        public Panel initPanel;
         private Label label1;
         private Label label3;
         private Label label2;

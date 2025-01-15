@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PlannerSDS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+47f0619ade5778f7bf783cbee1633e19e18c1883")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7a76e5476cabb33160fdb8aa00932217c0ea4618")]
 [assembly: System.Reflection.AssemblyProductAttribute("PlannerSDS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PlannerSDS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
