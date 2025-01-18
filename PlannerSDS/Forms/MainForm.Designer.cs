@@ -144,7 +144,6 @@
             ClientSize = new Size(1057, 533);
             Controls.Add(tabControl1);
             ForeColor = SystemColors.ControlText;
-            FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "MainForm";
             RightToLeft = RightToLeft.No;

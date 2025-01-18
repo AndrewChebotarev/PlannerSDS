@@ -1,6 +1,4 @@
-﻿using System.Windows.Forms;
-
-namespace PlannerSDS.DashBoardTabPage
+﻿namespace PlannerSDS.DashBoardTabPage
 {
     public class NewDashBoard
     {
@@ -10,6 +8,11 @@ namespace PlannerSDS.DashBoardTabPage
         private TabPage dashBoardTabPage;
         private Size ClientSize;
 
+        private int firstLocationX = 8;
+        private int firstStepForButtonX = 300;
+        private int nextStepsForButtonX = 600;
+        private int nextStepsForPanelX = 300;
+
         public NewDashBoard(MainForm mainForm)
         {
             this.mainForm = mainForm;
@@ -18,59 +21,77 @@ namespace PlannerSDS.DashBoardTabPage
             this.dashBoardTabPage = mainForm.dashBoardTabPage;
             this.ClientSize = mainForm.ClientSize;
         }
+
+        public void ChangeSize(Size newSize) => ClientSize = newSize;
         public void CreateNewDashBoard(object sender, EventArgs e)
         {
-            Button button1 = sender as Button;
+            NewLocationAddDashBoardButton(sender);
+            Panel newPanel = CreateNewDashBoardPanel();
 
-            if (initPanel == oldPanel)
+            this.dashBoardTabPage.Controls.Add(newPanel);
+            oldPanel = newPanel;
+        }
+
+        private void NewLocationAddDashBoardButton(object sender)
+        {
+            if (sender is Button addDashBoardButton)
             {
-                button1.Location = new Point(308, button1.Location.Y);
+                if (initPanel == oldPanel)
+                    addDashBoardButton.Location = new Point(firstLocationX + firstStepForButtonX, addDashBoardButton.Location.Y);
+                else
+                    addDashBoardButton.Location = new Point(oldPanel.Location.X + nextStepsForButtonX, addDashBoardButton.Location.Y);
             }
             else
-            {
-                button1.Location = new Point(initPanel.Location.X + 600, button1.Location.Y);
-            }
+                throw new ArgumentException("sender must be a Button");
+        }
 
-            // Создаем новую панель
+        private Panel CreateNewDashBoardPanel()
+        {
             Panel newPanel = new Panel();
-            newPanel.Size = oldPanel.Size; // Копируем размер
-
-            if (initPanel == oldPanel)
-            {
-                newPanel.Location = new Point(8, initPanel.Location.Y); // Устанавливаем новое местоположение
-            }
-            else
-            {
-                newPanel.Location = new Point(initPanel.Location.X + 300, initPanel.Location.Y); // Устанавливаем новое местоположение
-            }
-            newPanel.BackColor = oldPanel.BackColor; // Копируем цвет фона
-            newPanel.Visible = true;
-            newPanel.AutoScroll = true;
-
-            newPanel.Height = this.ClientSize.Height; // Устанавливаем высоту панели равной высоте клиентской области формы
-
-            // Учитываем позицию прокрутки
             Point scrollPosition = oldPanel.AutoScrollPosition;
 
-            // Копируем дочерние элементы
+            newPanel = SetLocationPanel(newPanel);
+            newPanel = SetParametersPanel(newPanel);
+            newPanel = CopyChildrenUIPanel(newPanel, scrollPosition);
+
+            return newPanel;
+        }
+
+        private Panel SetLocationPanel(Panel newPanel)
+        {
+            if (initPanel == oldPanel)
+                newPanel.Location = new Point(firstLocationX, initPanel.Location.Y);
+            else
+                newPanel.Location = new Point(oldPanel.Location.X + nextStepsForPanelX, initPanel.Location.Y);
+
+            return newPanel;
+        }
+
+        private Panel SetParametersPanel(Panel newPanel)
+        {
+            newPanel.Size = oldPanel.Size;
+            newPanel.BackColor = oldPanel.BackColor;
+            newPanel.Visible = true;
+            newPanel.AutoScroll = true;
+            newPanel.Height = this.ClientSize.Height;
+
+            return newPanel;
+        }
+
+        private Panel CopyChildrenUIPanel(Panel newPanel, Point scrollPosition)
+        {
             foreach (Control control in oldPanel.Controls)
             {
                 Control newControl = (Control)control.Clone();
 
-                // Клонируем элемент управления
                 if (newControl is Label)
-                {
                     newControl.Click += mainForm.NewTask_Click;
-                }
-                // Корректируем местоположение с учетом позиции прокрутки
+
                 newControl.Location = new Point(control.Location.X - scrollPosition.X, control.Location.Y - scrollPosition.Y);
-                newPanel.Controls.Add(newControl); // Добавляем новый элемент в новую панель
+                newPanel.Controls.Add(newControl);
             }
 
-            // Добавляем новую панель на форму
-            this.dashBoardTabPage.Controls.Add(newPanel);
-
-            oldPanel = newPanel;
+            return newPanel;
         }
     }
 }

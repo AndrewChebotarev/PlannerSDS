@@ -7,8 +7,20 @@
       "RelativeMoniker": "D:0:0:{D2B43451-315A-4856-865B-929BA90C5267}|PlannerSDS.csproj|solutionrelative:dashboardtabpage\\newdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D2B43451-315A-4856-865B-929BA90C5267}|PlannerSDS.csproj|d:\\sds\\plannersds\\plannersds\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D2B43451-315A-4856-865B-929BA90C5267}|PlannerSDS.csproj|D:\\SDS\\PlannerSDS\\PlannerSDS\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D2B43451-315A-4856-865B-929BA90C5267}|PlannerSDS.csproj|solutionrelative:forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2B43451-315A-4856-865B-929BA90C5267}|PlannerSDS.csproj|d:\\sds\\plannersds\\plannersds\\helpclasses\\controlextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2B43451-315A-4856-865B-929BA90C5267}|PlannerSDS.csproj|solutionrelative:helpclasses\\controlextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2B43451-315A-4856-865B-929BA90C5267}|PlannerSDS.csproj|d:\\sds\\plannersds\\plannersds\\dashboardtabpage\\newtask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2B43451-315A-4856-865B-929BA90C5267}|PlannerSDS.csproj|solutionrelative:dashboardtabpage\\newtask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2B43451-315A-4856-865B-929BA90C5267}|PlannerSDS.csproj|d:\\sds\\plannersds\\plannersds\\helpclasses\\formresize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2B43451-315A-4856-865B-929BA90C5267}|PlannerSDS.csproj|solutionrelative:helpclasses\\formresize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,19 +30,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainForm.cs",
-              "DocumentMoniker": "D:\\SDS\\PlannerSDS\\PlannerSDS\\Forms\\MainForm.cs",
-              "RelativeDocumentMoniker": "Forms\\MainForm.cs",
-              "ToolTip": "D:\\SDS\\PlannerSDS\\PlannerSDS\\Forms\\MainForm.cs",
-              "RelativeToolTip": "Forms\\MainForm.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAaAAAA",
+              "DocumentIndex": 2,
+              "Title": "ControlExtensions.cs",
+              "DocumentMoniker": "D:\\SDS\\PlannerSDS\\PlannerSDS\\HelpClasses\\ControlExtensions.cs",
+              "RelativeDocumentMoniker": "HelpClasses\\ControlExtensions.cs",
+              "ToolTip": "D:\\SDS\\PlannerSDS\\PlannerSDS\\HelpClasses\\ControlExtensions.cs",
+              "RelativeToolTip": "HelpClasses\\ControlExtensions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T21:02:59.75Z",
+              "WhenOpened": "2025-01-18T21:59:10.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NewTask.cs",
+              "DocumentMoniker": "D:\\SDS\\PlannerSDS\\PlannerSDS\\DashBoardTabPage\\NewTask.cs",
+              "RelativeDocumentMoniker": "DashBoardTabPage\\NewTask.cs",
+              "ToolTip": "D:\\SDS\\PlannerSDS\\PlannerSDS\\DashBoardTabPage\\NewTask.cs",
+              "RelativeToolTip": "DashBoardTabPage\\NewTask.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T21:58:59.056Z",
               "EditorCaption": ""
             },
             {
@@ -41,9 +66,35 @@
               "RelativeDocumentMoniker": "DashBoardTabPage\\NewDashBoard.cs",
               "ToolTip": "D:\\SDS\\PlannerSDS\\PlannerSDS\\DashBoardTabPage\\NewDashBoard.cs",
               "RelativeToolTip": "DashBoardTabPage\\NewDashBoard.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAwAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T20:42:00.979Z",
+              "WhenOpened": "2025-01-18T21:54:13.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormResize.cs",
+              "DocumentMoniker": "D:\\SDS\\PlannerSDS\\PlannerSDS\\HelpClasses\\FormResize.cs",
+              "RelativeDocumentMoniker": "HelpClasses\\FormResize.cs",
+              "ToolTip": "D:\\SDS\\PlannerSDS\\PlannerSDS\\HelpClasses\\FormResize.cs",
+              "RelativeToolTip": "HelpClasses\\FormResize.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T21:50:44.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "D:\\SDS\\PlannerSDS\\PlannerSDS\\Forms\\MainForm.cs",
+              "RelativeDocumentMoniker": "Forms\\MainForm.cs",
+              "ToolTip": "D:\\SDS\\PlannerSDS\\PlannerSDS\\Forms\\MainForm.cs",
+              "RelativeToolTip": "Forms\\MainForm.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAYwCAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T21:02:59.75Z",
               "EditorCaption": ""
             }
           ]
