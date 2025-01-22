@@ -1,6 +1,4 @@
-using System.Windows.Forms;
-
-namespace PlannerSDS
+namespace PlannerSDS.Forms
 {
     public partial class MainForm : Form
     {
@@ -26,7 +24,28 @@ namespace PlannerSDS
 
             newDashBoard.ChangeSize(ClientSize);
         }
-        private void NewDashBoard_Click(object? sender, EventArgs e) => newDashBoard?.CreateNewDashBoard(sender, e);
-        public void NewTask_Click(object? sender, EventArgs e) => newTask?.CreateNewTask(sender, e);
+        private void NewDashBoard_Click(object? sender, EventArgs e)
+        {
+            if (sender == null)
+                throw new ArgumentNullException(nameof(sender), "Sender cannot be null.");
+
+            newDashBoard?.CreateNewDashBoard(sender, e);
+        }
+        public void NewTask_Click(object? sender, EventArgs e)
+        {
+            if (sender == null)
+                throw new ArgumentNullException(nameof(sender), "Sender cannot be null.");
+
+            newTask?.CreateNewTask(sender, e);
+        }
+
+        public void ChangeDashBoardName_Click(object? sender, EventArgs e)
+        {
+            if (sender == null)
+                throw new ArgumentNullException(nameof(sender), "Sender cannot be null.");
+
+            DashBoardNameForm dashBoardNameForm = new();
+            dashBoardNameForm.ShowDialog();
+        }
     }
 }

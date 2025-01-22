@@ -7,6 +7,7 @@
         private Panel oldPanel;
         private TabPage dashBoardTabPage;
         private Size ClientSize;
+        private int countNewPanel = 0;
 
         private int firstLocationX = 8;
         private int firstStepForButtonX = 300;
@@ -25,6 +26,7 @@
         public void ChangeSize(Size newSize) => ClientSize = newSize;
         public void CreateNewDashBoard(object sender, EventArgs e)
         {
+            countNewPanel++;
             NewLocationAddDashBoardButton(sender);
             Panel newPanel = CreateNewDashBoardPanel();
 
@@ -69,6 +71,8 @@
 
         private Panel SetParametersPanel(Panel newPanel)
         {
+
+            newPanel.Name = "DashBoard" + countNewPanel.ToString();
             newPanel.Size = oldPanel.Size;
             newPanel.BackColor = oldPanel.BackColor;
             newPanel.Visible = true;
@@ -84,8 +88,13 @@
             {
                 Control newControl = (Control)control.Clone();
 
-                if (newControl is Label)
+                newControl.Name = control.Name;
+
+                if (newControl is Label && newControl.Name == "dashBoardNameLabel")
+                    newControl.Click += mainForm.ChangeDashBoardName_Click;
+                if (newControl is Label && newControl.Name == "newTaskLabel")
                     newControl.Click += mainForm.NewTask_Click;
+
 
                 newControl.Location = new Point(control.Location.X - scrollPosition.X, control.Location.Y - scrollPosition.Y);
                 newPanel.Controls.Add(newControl);

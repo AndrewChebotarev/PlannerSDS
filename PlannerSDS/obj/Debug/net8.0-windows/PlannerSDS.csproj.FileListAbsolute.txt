@@ -14,5 +14,6 @@ D:\SDS\PlannerSDS\PlannerSDS\obj\Debug\net8.0-windows\PlannerSDS.pdb
 D:\SDS\PlannerSDS\PlannerSDS\obj\Debug\net8.0-windows\PlannerSDS.genruntimeconfig.cache
 D:\SDS\PlannerSDS\PlannerSDS\obj\Debug\net8.0-windows\ref\PlannerSDS.dll
 D:\SDS\PlannerSDS\PlannerSDS\obj\Debug\net8.0-windows\PlannerSDS.Properties.Resources.resources
-D:\SDS\PlannerSDS\PlannerSDS\obj\Debug\net8.0-windows\PlannerSDS.MainForm.resources
 D:\SDS\PlannerSDS\PlannerSDS\obj\Debug\net8.0-windows\PlannerSDS.sourcelink.json
+D:\SDS\PlannerSDS\PlannerSDS\obj\Debug\net8.0-windows\PlannerSDS.Forms.DashBoardNameForm.resources
+D:\SDS\PlannerSDS\PlannerSDS\obj\Debug\net8.0-windows\PlannerSDS.Forms.MainForm.resources
