@@ -44,7 +44,7 @@ namespace PlannerSDS.Forms
             if (sender == null)
                 throw new ArgumentNullException(nameof(sender), "Sender cannot be null.");
 
-            DashBoardNameForm dashBoardNameForm = new();
+            DashBoardNameForm dashBoardNameForm = new(sender);
             dashBoardNameForm.ShowDialog();
         }
     }

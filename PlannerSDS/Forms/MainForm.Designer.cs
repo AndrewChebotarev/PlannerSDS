@@ -35,7 +35,7 @@
             initPanel = new Panel();
             newTaskLabel = new Label();
             lineLabel = new Label();
-            this.dashBoardNameLabel = new Label();
+            dashBoardNameLabel = new Label();
             tabPage2 = new TabPage();
             tabControl1.SuspendLayout();
             dashBoardTabPage.SuspendLayout();
@@ -89,7 +89,7 @@
             initPanel.BackColor = Color.SkyBlue;
             initPanel.Controls.Add(newTaskLabel);
             initPanel.Controls.Add(lineLabel);
-            initPanel.Controls.Add(this.dashBoardNameLabel);
+            initPanel.Controls.Add(dashBoardNameLabel);
             initPanel.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
             initPanel.Location = new Point(8, 6);
             initPanel.Name = "initPanel";
@@ -105,7 +105,7 @@
             newTaskLabel.Size = new Size(148, 20);
             newTaskLabel.TabIndex = 4;
             newTaskLabel.Text = "+ Добавить задачу";
-            newTaskLabel.Click += this.NewTask_Click;
+            newTaskLabel.Click += NewTask_Click;
             // 
             // lineLabel
             // 
@@ -118,12 +118,12 @@
             // 
             // dashBoardNameLabel
             // 
-            this.dashBoardNameLabel.AutoSize = true;
-            this.dashBoardNameLabel.Location = new Point(68, 11);
-            this.dashBoardNameLabel.Name = "dashBoardNameLabel";
-            this.dashBoardNameLabel.Size = new Size(140, 20);
-            this.dashBoardNameLabel.TabIndex = 2;
-            this.dashBoardNameLabel.Text = "Название раздела";
+            dashBoardNameLabel.AutoSize = true;
+            dashBoardNameLabel.Location = new Point(20, 11);
+            dashBoardNameLabel.Name = "dashBoardNameLabel";
+            dashBoardNameLabel.Size = new Size(140, 20);
+            dashBoardNameLabel.TabIndex = 2;
+            dashBoardNameLabel.Text = "Название раздела";
             // 
             // tabPage2
             // 

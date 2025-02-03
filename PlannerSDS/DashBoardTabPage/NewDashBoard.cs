@@ -91,7 +91,10 @@
                 newControl.Name = control.Name;
 
                 if (newControl is Label && newControl.Name == "dashBoardNameLabel")
+                {
                     newControl.Click += mainForm.ChangeDashBoardName_Click;
+                    newControl.Font = control.Font;
+                }
                 if (newControl is Label && newControl.Name == "newTaskLabel")
                     newControl.Click += mainForm.NewTask_Click;
 

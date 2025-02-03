@@ -42,6 +42,7 @@
             changeDashBoardNameButton.TabIndex = 0;
             changeDashBoardNameButton.Text = "Изменить";
             changeDashBoardNameButton.UseVisualStyleBackColor = true;
+            changeDashBoardNameButton.Click += ChangeDashBoardNameButton_Click;
             // 
             // CancelDashBoardNameButton
             // 
@@ -51,6 +52,7 @@
             CancelDashBoardNameButton.TabIndex = 1;
             CancelDashBoardNameButton.Text = "Отмена";
             CancelDashBoardNameButton.UseVisualStyleBackColor = true;
+            CancelDashBoardNameButton.Click += CancelDashBoardNameButton_Click;
             // 
             // dashBoardNameTextBox
             // 
